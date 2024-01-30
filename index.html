@@ -25,11 +25,14 @@
                   name=""
                   aria-describedby="helpId"
                   placeholder="Aggiungi un attività"
+                  v-model="newTask.text"
+                  :keyUp.enter="addTask"
                   >
             
               </div>
               <div class="col-3">
-                <button class=" border border-opacity-50 rounded">Aggiungi</button>
+                <button class=" border border-opacity-50 rounded"
+                @click="addTask">Aggiungi</button>
             </div>
               
             </div>

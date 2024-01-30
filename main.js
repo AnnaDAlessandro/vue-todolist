@@ -33,6 +33,12 @@ createApp({
   methods:{
     removeTask(index){
       this.tasks.splice(index,1)
+    },
+    addTask(){
+      if(this.newTask !== ``){
+        this.tasks.unshift(this.newTask)
+      }
+      this.newTask= ``
     }
 }
 }).mount('#app')
