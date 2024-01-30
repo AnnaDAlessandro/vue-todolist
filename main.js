@@ -6,7 +6,7 @@ createApp({
       newTask:{
         text:``,
         done: false
-      }
+      },
       tasks:[
         {
           text:'fare i compiti',
@@ -23,7 +23,7 @@ createApp({
         {
           text:'porta a spasso il cane',
           done: true
-        },
+        }
       ]
     } 
   },
