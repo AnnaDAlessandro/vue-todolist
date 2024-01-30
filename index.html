@@ -40,7 +40,10 @@
             v-for="(element,index) in tasks"
             :key="index">
              <div class="d-flex justify-content-between">
-              <p class="text-capitalize">{{element.text}}</p>
+              <p class="text-capitalize"
+              :class="{`.linea`:element.done}"
+              @click="checkText(index)">
+              {{element.text}}</p>
               <span 
               @click="removeTask(index)"><i class="fa-solid fa-xmark"></i></span>
             </div>

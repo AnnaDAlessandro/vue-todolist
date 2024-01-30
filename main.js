@@ -39,6 +39,9 @@ createApp({
         this.tasks.unshift(this.newTask)
       }
       this.newTask= ``
+    },
+    checkText(index){
+      this.tasks[index].done = !this.tasks[index].done
     }
 }
 }).mount('#app')
